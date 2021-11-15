@@ -6,7 +6,8 @@ os.environ['PATH'] += r"D:/ALL_data_science/Freecodecamp/Selenium-Scraping-Bot" 
 driver = webdriver.Chrome()
 driver.get('https://pixishoes.com/')
 
-closing_ad = driver.find_element_by_xpath('//*[@id="NewsletterPopup-newsletter-popup"]/div/div/button/svg')
+time.sleep(10)
+closing_ad = driver.find_element_by_css_selector('#NewsletterPopup-newsletter-popup > div > div > button > svg > path')
 time.sleep(20)
 closing_ad.click()
 
