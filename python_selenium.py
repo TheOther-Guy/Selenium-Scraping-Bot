@@ -2,7 +2,7 @@ import os
 from selenium import webdriver
 import selenium
 import time
-os.environ['PATH'] += r"C:/seleniumdrivers" # this slash should be forward slash else it won't work
+os.environ['PATH'] += r"D:/ALL_data_science/Freecodecamp/Selenium-Scraping-Bot" # this slash should be forward slash else it won't work
 driver = webdriver.Chrome()
 driver.get('https://pixishoes.com/')
 
